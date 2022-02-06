@@ -83,7 +83,7 @@ ProteoformMap_4 = function(Peptide_FC_P_Selected,Peptide_ProteinSeq_2){
       # first order the test2
       #TEST4<-test2[order(test2[,"RTPosition"]),test2[,"F"]),]
       test2_M_large=subset(test2,Fold>0)
-      test2_M_small=subset(TEST4,Fold<0)
+      test2_M_small=subset(test2,Fold<0)
       test2_M_smallRTP<-min(test2_M_large$RTPosition)
       test2_M_largeRTP<-max(test2_M_large$RTPosition)
       for(n in 1: nrow(test2_M_small)){
